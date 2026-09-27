@@ -32,4 +32,7 @@ if __name__ == "__main__":
 
 #Assert verify an assumption is x > 2 everything fine, no then it's over
 
-#try except: similaire a try catch sauf que ca ne me fai tpas sortir du programme
+#try except: similaire a try catch 
+
+#https://koor.fr/Python/CodeSamples/SysArgv.wp
+#https://www.geeksforgeeks.org/python/python-assertion-error/
