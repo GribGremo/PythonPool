@@ -1,8 +1,9 @@
-
-
 def ft_filter(function,iterable):
     #
     for i in iterable:
+        if function is None:
+            if i:
+                yield i
         if function(i):
             yield i
 

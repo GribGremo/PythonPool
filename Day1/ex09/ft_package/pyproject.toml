@@ -1,0 +1,15 @@
+[project]
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="sylabbe", email="classified@example.com" },
+]
+description = "This package is an exercise(day1/ex09)"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]

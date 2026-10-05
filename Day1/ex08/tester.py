@@ -11,6 +11,7 @@ def main() :
     bcn = ft_filter(what,test)
     for i in bcn:
         print (i)
+    print(list(ft_filter(None, [0, 1, 2, False, True, "", "hello"])))
 
 if __name__ == "__main__":
     main()
