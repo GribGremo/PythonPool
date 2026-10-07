@@ -1,7 +1,7 @@
 import sys
-import string
 
-def main() ->int :
+
+def main() -> int:
     NESTED_MORSE = {
         " ": "/",
         "A": ".-",
@@ -42,14 +42,24 @@ def main() ->int :
         "0": "-----"
     }
     assert len(sys.argv) == 2, "Invalid number of arguments"
-    assert all(c.isalpha() or c.isdigit() or c == " " for c in sys.argv[1]), "The arguments are bad"
+    assert all(
+        c.isalpha() or c.isdigit() or c == " "
+        for c in sys.argv[1]
+        ), "The arguments are bad"
     print(*map(lambda c: NESTED_MORSE[c.upper()], sys.argv[1]))
+
 
 if __name__ == "__main__":
     main()
 
-#NOTIONS
-# all va iterer sur les elements de mon expression et me dire s'ils sont TOUS correct
-#map permet de "creer " un resultat theorique d'une meme action effectuer sur tous les elements de iterable
-# Dans mon cas je vais effectuer l'action "return NESTED_MORSE[c.upper()]" pour chaque iteration sur ma string sys.argv[1]
-#Le * permet de decomposer mo objet iterable, il va print(elem1,elm2,elem3), c'est accesoirement ce qui met un espace entre chaque"caractere" morse
+# NOTIONS
+# all va iterer sur les elements de mon expression
+# et me dire s'ils sont TOUS correct
+# map permet de "creer " un resultat theorique d'une meme
+# action effectuer sur tous les elements de iterable
+# Dans mon cas je vais effectuer l'action
+# "return NESTED_MORSE[c.upper()]" pour chaque iteration sur ma
+# string sys.argv[1]
+# Le * permet de decomposer mo objet iterable, il va
+# print(elem1,elm2,elem3), c'est accesoirement ce qui met un
+# espace entre chaque"caractere" morse

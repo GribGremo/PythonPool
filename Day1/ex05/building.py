@@ -2,10 +2,12 @@
 import sys
 import string
 
-#Is string allowed
+
+# Is string allowed
 
 def main() -> int:
-    """Return nomber of lowercase, uppercase, punctuation characters, digits and spaces in a string """
+    """Return nomber of lowercase, uppercase, punctuation characters,
+      digits and spaces in a string """
     # print(__doc__)
     # print(main.__doc__)
 
@@ -22,12 +24,18 @@ def main() -> int:
     ct_space = sum(c.isspace() for c in entry)
     ct_punct = sum(c in string.punctuation for c in entry)
 
-    print(f"The text contains {len(entry)} characters: {ct_upper} upper letters {ct_lower} lower letters {ct_punct} punctuation marks {ct_space} spaces {ct_digit} digits")
+    print(f"The text contains "
+          f"{len(entry)} characters: "
+          f"{ct_upper} upper letters "
+          f"{ct_lower} lower letters "
+          f"{ct_punct} punctuation marks "
+          f"{ct_space} spaces "
+          f"{ct_digit} digits")
     return 1
+
 
 if __name__ == "__main__":
     main()
 
-#https://www.pythoniste.fr/python/quest-ce-quun-generateur-en-python/
-#https://www.geeksforgeeks.org/python/python-map-function/
-
+# https://www.pythoniste.fr/python/quest-ce-quun-generateur-en-python/
+# https://www.geeksforgeeks.org/python/python-map-function/

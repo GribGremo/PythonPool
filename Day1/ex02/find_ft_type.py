@@ -1,6 +1,7 @@
-from typing import Any  
+from typing import Any
 
-def all_thing_is_obj(object:Any) -> int:
+
+def all_thing_is_obj(object: Any) -> int:
     t = type(object)
     if t == str:
         print(f"{object} is in the kitchen : {t}")
@@ -14,7 +15,6 @@ def all_thing_is_obj(object:Any) -> int:
         print(f"Dict : {t}")
     else:
         print("Type not found")
-        
     return 42
 
-#https://www.geeksforgeeks.org/python/python-type-function/
+# https://www.geeksforgeeks.org/python/python-type-function/

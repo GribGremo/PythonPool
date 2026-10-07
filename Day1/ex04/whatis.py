@@ -6,7 +6,8 @@ def whatis(arg) -> None:
         print("I'm even")
     else:
         print("I'm odd")
-        
+
+
 if __name__ == "__main__":
     nb = None
 
@@ -21,18 +22,19 @@ if __name__ == "__main__":
     whatis(nb)
 
 
-#NOTIONS
-#En python pas de fonction main obligatoire mais la convention veut que l'on 
+# NOTIONS
+# En python pas de fonction main obligatoire mais la convention veut que l'on
 # verifie le nom du fichier dans la variable "__name__", si ce fichier a ete
-# execute directement le name sera alors "__main__", vous pourrez alors 
+# execute directement le name sera alors "__main__", vous pourrez alors
 # verifier le nom de main avant d'executer ce fichier,
 # il pourrait tout simplement etre importe depuis un autre fichier
 # et appeler ce qui pourrait causer des soucis.
-# Attention en python on envoie des references dans les fonctions pas des copies
+# Attention en python on envoie des references dans les fonctions pas des
+# copies
 
-#Assert verify an assumption is x > 2 everything fine, no then it's over
+# Assert verify an assumption is x > 2 everything fine, no then it's over
 
-#try except: similaire a try catch 
+# try except: similaire a try catch
 
-#https://koor.fr/Python/CodeSamples/SysArgv.wp
-#https://www.geeksforgeeks.org/python/python-assertion-error/
+# https://koor.fr/Python/CodeSamples/SysArgv.wp
+# https://www.geeksforgeeks.org/python/python-assertion-error/
