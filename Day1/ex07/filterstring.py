@@ -22,12 +22,11 @@ def main() -> int:
         for c in arg1
         ), "Invalid characters in string"
 
-    check_len = lambda w: len(w) > arg2
+    # check_len = lambda w: len(w) > arg2
     lst_str = arg1.split()
     cut_words = [
-        w
-        for w in lst_str
-        if lambda w: len(w) > arg2]
+        w for w in lst_str
+        if len(w) > arg2]
     print(cut_words)
 
 
@@ -35,6 +34,7 @@ if __name__ == "__main__":
     main()
 
 # NOTIONS
-# Il semblerait que pour les entrees d'un programme on utilise plutot argparse que assert hors ici il n'est pas autorise
+# Il semblerait que pour les entrees d'un programme on utilise
+# plutot argparse que assert hors ici il n'est pas autorise
 
 # https://www.w3schools.com/python/python_lists_comprehension.asp
