@@ -1,10 +1,12 @@
 import datetime
 import time
 
+# Return of seconds since epoch as a float
+t = time.time()
 print(
     f"Seconds since January 1, 1970: "
-    f"{time.time():,.4f} or "
-    f"{time.time():.2e} in scientific notation")
+    f"{t:,.4f} or "  # "," Inserts a , every 3 digit, 4f 4 digits after decimal
+    f"{t:.2e} in scientific notation")  # Exponent 1 digit, 
 print(datetime.date.today().strftime("%b %d %Y"))
 
 # Expected output:
@@ -15,6 +17,9 @@ print(datetime.date.today().strftime("%b %d %Y"))
 
 
 # SOURCES
+# Date
+# https://docs.python.org/3/library/datetime.html#module-datetime
+
 # Formatage date
 # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
 
