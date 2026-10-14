@@ -8,15 +8,16 @@ def NULL_not_found(object: Any) -> int:
         print(f"Nothing: None {t}")
     elif isinstance(object, float) and object != object:
         print(f"Cheese: nan {t}")
-    elif isinstance(object, int) and object == 0:
+    elif isinstance(object, int) and object == 0 and object is not False:
         print(f"Zero: 0 {t}")
     elif object == "":
         print(f"Empty: {t}")
     elif isinstance(object, bool) and object is False:
-        print(f"False: False {t}")
+        print(f"Fake: False {t}")
     else:
         print("Type not found")
         return 1
+    return 0
 
 
 # Nothing: None <class 'NoneType'>$

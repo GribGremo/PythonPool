@@ -1,7 +1,7 @@
 import sys
 
 
-def whatis(arg) -> None:
+def whatis(arg: int) -> None:
     if arg % 2 == 0:
         print("I'm even")
     else:
@@ -17,8 +17,7 @@ if __name__ == "__main__":
         nb = int(sys.argv[1])
     except ValueError:
         raise AssertionError("argument is not an integer")
-    # assert type(sys.argv[1]) is int, "argument is not an integer"
-    # cp_arg = sys.argv[1:]
+
     whatis(nb)
 
 

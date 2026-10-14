@@ -17,4 +17,15 @@ def all_thing_is_obj(object: Any) -> int:
         print("Type not found")
     return 42
 
+
+# Expeted output
+# List : <class 'list'>$
+# Tuple : <class 'tuple'>$
+# Set : <class 'set'>$
+# Dict : <class 'dict'>$
+# Brian is in the kitchen : <class 'str'>$
+# Toto is in the kitchen : <class 'str'>$
+# Type not found$
+# 42$
+
 # https://www.geeksforgeeks.org/python/python-type-function/

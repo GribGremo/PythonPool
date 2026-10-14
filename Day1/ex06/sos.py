@@ -60,6 +60,11 @@ if __name__ == "__main__":
 # Dans mon cas je vais effectuer l'action
 # "return NESTED_MORSE[c.upper()]" pour chaque iteration sur ma
 # string sys.argv[1]
-# Le * permet de decomposer mo objet iterable, il va
-# print(elem1,elm2,elem3), c'est accesoirement ce qui met un
+# Le *(splat) permet de decomposer(iterable unpacking) mon objet iterable, il va
+# print(elem1,elm2,elem3), print n'a pas de limites d'args(attention si ta fonction en a une ton unpack risque de lever une erreur), c'est accesoirement ce qui met un
 # espace entre chaque"caractere" morse
+
+# https://www.expertpython.fr/lexique/all()
+# https://www.expertpython.fr/lexique/map()
+# https://www.w3schools.com/python/python_lambda.asp
+# https://www.docstring.fr/glossaire/unpacking/
