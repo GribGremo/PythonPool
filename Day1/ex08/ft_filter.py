@@ -1,7 +1,7 @@
 """PythonPool/Day1/Ex08"""
 
 
-def ft_filter(function, iterable):
+def ft_filter(function: None, iterable, /):
     """filter(function or None, iterable) --> filter object
 
 Return an iterator yielding those items of iterable for which function(item)

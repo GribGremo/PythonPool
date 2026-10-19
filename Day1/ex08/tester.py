@@ -15,18 +15,50 @@ def main():
     print("~~~~~~~~~ TEST FT_FILTER~~~~~~~~~")
     print("Test 1:")
     bcn = ft_filter(what, test)
+    print("Test next")
+    print(next(bcn))
+    print("Test loop since newsetpoint(4 in this case)")
     for i in bcn:
         print(i)
     print("Test 2:")
     print(list(ft_filter(None, [0, 1, 2, False, True, "", "hello"])))
+    print(ft_filter.__doc__);
 
     print("~~~~~~~~~ TEST FILTER~~~~~~~~~")
     print("Test 1:")
     bcn = filter(what, test)
+    print("Test next")
+    print(next(bcn))
+    print("Test loop since newsetpoint(4 in this case)")
     for i in bcn:
         print(i)
     print("Test 2:")
     print(list(filter(None, [0, 1, 2, False, True, "", "hello"])))
+    print(filter.__doc__);
+
+    print("~~~~~~~~~TEST WHILE FT-FILTER~~~~~~~~~")
+    bcn = ft_filter(what, test)
+    while (True):
+        try:
+            print("Pre-next")
+            value = next(bcn)
+            print(value)
+            print("Post-next")
+        except StopIteration:
+            print("StopIteration caught: End of loop")
+            break
+        
+    print("~~~~~~~~~TEST WHILE FT-FILTER~~~~~~~~~")
+    bcn = filter(what, test)
+    while (True):
+        try:
+            print("Pre-next")
+            value = next(bcn)
+            print(value)
+            print("Post-next")
+        except StopIteration:
+            print("StopIteration caught: End of loop")
+            break
 
 
 if __name__ == "__main__":
