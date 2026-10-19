@@ -1,3 +1,6 @@
+"""PythonPool/Day1/Ex08"""
+
+
 def ft_filter(function, iterable):
     """filter(function or None, iterable) --> filter object
 

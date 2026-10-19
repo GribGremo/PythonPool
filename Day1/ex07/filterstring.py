@@ -1,3 +1,4 @@
+"""PythonPool/Day1/Ex07"""
 import sys
 import string
 
@@ -8,21 +9,15 @@ def main() -> int:
     the word will be print"""
 
     assert len(sys.argv) == 3, "Invalid number of arguments"
-    assert type(sys.argv[1]) is str, "First argument should be a string"
-
     arg1 = sys.argv[1]
     try:
         arg2 = int(sys.argv[2])
     except ValueError:
-        print("Second argument should be an integer")
-        exit()
-    # check_str = lambda c: c.isprintable() and c not in string.punctuation
+        raise AssertionError("Second argument should be an integer")
     assert all(
         lambda c: c.isprintable() and c not in string.punctuation
         for c in arg1
         ), "Invalid characters in string"
-
-    # check_len = lambda w: len(w) > arg2
     lst_str = arg1.split()
     cut_words = [
         w for w in lst_str

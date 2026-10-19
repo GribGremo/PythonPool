@@ -6,7 +6,7 @@ t = time.time()
 print(
     f"Seconds since January 1, 1970: "
     f"{t:,.4f} or "  # "," Inserts a , every 3 digit, 4f 4 digits after decimal
-    f"{t:.2e} in scientific notation")  # Exponent 1 digit, 
+    f"{t:.2e} in scientific notation")
 print(datetime.date.today().strftime("%b %d %Y"))
 
 # Expected output:

@@ -1,6 +1,7 @@
-"""This file identify package, and display our modules as we want,
+"""PythonPool/Day1/Ex09
+This file identify package, and display our modules as we want,
 If we import modules in it, no need to specify later(be careful heavy modules),
- you can also make lazy import using getattr()"""
+you can also make lazy import using getattr()"""
 
 from .count_in_list import count_in_list
 
