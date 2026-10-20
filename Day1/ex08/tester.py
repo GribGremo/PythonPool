@@ -12,7 +12,7 @@ def what(x) -> bool:
 def main():
     """Main function to test ft_filter"""
     test = [1, 2, 3, 4, 5, 6]
-    print("~~~~~~~~~ TEST FT_FILTER~~~~~~~~~")
+    print("~~~~~~~~~TEST FT_FILTER~~~~~~~~~")
     print("Test 1:")
     bcn = ft_filter(what, test)
     print("Test next")
@@ -24,7 +24,7 @@ def main():
     print(list(ft_filter(None, [0, 1, 2, False, True, "", "hello"])))
     print(ft_filter.__doc__);
 
-    print("~~~~~~~~~ TEST FILTER~~~~~~~~~")
+    print("~~~~~~~~~TEST FILTER~~~~~~~~~")
     print("Test 1:")
     bcn = filter(what, test)
     print("Test next")
@@ -47,7 +47,7 @@ def main():
         except StopIteration:
             print("StopIteration caught: End of loop")
             break
-        
+  
     print("~~~~~~~~~TEST WHILE FT-FILTER~~~~~~~~~")
     bcn = filter(what, test)
     while (True):
