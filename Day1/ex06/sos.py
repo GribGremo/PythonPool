@@ -3,7 +3,8 @@ import sys
 
 
 def main() -> int:
-    """This program take a string (alphanumeric caracters and return it in morse code)"""
+    """This program take a string
+    (alphanumeric caracters and return it in morse code)"""
     NESTED_MORSE = {
         " ": "/",
         "A": ".-",

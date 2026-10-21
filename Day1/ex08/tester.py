@@ -22,7 +22,7 @@ def main():
         print(i)
     print("Test 2:")
     print(list(ft_filter(None, [0, 1, 2, False, True, "", "hello"])))
-    print(ft_filter.__doc__);
+    print(ft_filter.__doc__)
 
     print("~~~~~~~~~TEST FILTER~~~~~~~~~")
     print("Test 1:")
@@ -34,7 +34,7 @@ def main():
         print(i)
     print("Test 2:")
     print(list(filter(None, [0, 1, 2, False, True, "", "hello"])))
-    print(filter.__doc__);
+    print(filter.__doc__)
 
     print("~~~~~~~~~TEST WHILE FT-FILTER~~~~~~~~~")
     bcn = ft_filter(what, test)
@@ -47,7 +47,7 @@ def main():
         except StopIteration:
             print("StopIteration caught: End of loop")
             break
-  
+
     print("~~~~~~~~~TEST WHILE FT-FILTER~~~~~~~~~")
     bcn = filter(what, test)
     while (True):
