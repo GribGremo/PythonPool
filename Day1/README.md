@@ -48,3 +48,7 @@ Exit python environment(not erased)
 ### Flake8
 Launch flake8 without .venv
 * ```flake8 . --exclude=.venv```
+
+[flake8]
+exclude = .venv
+max-line-length = 88
