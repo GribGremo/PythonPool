@@ -48,7 +48,7 @@ def main() -> int:
     assert all(
         c.isalpha() or c.isdigit() or c == " "
         for c in sys.argv[1]
-        ), "The arguments are bad"
+    ), "The arguments are bad"
     print(*map(lambda c: NESTED_MORSE[c.upper()], sys.argv[1]))
 
 

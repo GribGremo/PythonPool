@@ -10,7 +10,7 @@ print("\n".join(sys.path))
 print("\nPATH WHERE FT_PACKAGE IS LOCATED:")
 print(ft_package.__file__)
 
-#Results
+# Results
 print("\nRESULTS")
 print(count_in_list(["toto", "tata", "toto"], "toto"))  # output: 2
 print(count_in_list(["toto", "tata", "toto"], "tutu"))  # output: 0

@@ -18,7 +18,7 @@ def main() -> int:
     assert all(
         # charcheck(arg1)
         (lambda arg: [c.isprintable() and c not in punct for c in arg])(arg1)
-        ), "Invalid characters in string"
+    ), "Invalid characters in string"
 
     lst_str = arg1.split()
     cut_words = [
